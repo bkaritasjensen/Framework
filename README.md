@@ -2,7 +2,7 @@
 
 ## GAME OF THRONES
 
-*Har valgt at lave en hjemmeside med - Game of Thrones, tema. Hvor jeg vil hente data fra API med beskrivelse over de forskellige karakter der er i serien*
+*Har valgt at lave en hjemmeside med - Game of Thrones, tema. Hvor jeg vil hente data fra API med beskrivelse over de forskellige karakter der er i serien og bøgerne der er blevet skrevet. Siden bygges op med React og Tailwind, for at bruge nogle af de nye frameworks vi har lært.*
 
 Fundet API'en fra denne side: 
 https://public-apis.xyz/an-api-of-ice-and-fire-9393
@@ -19,11 +19,6 @@ Begyndt at finde billeder til hjemmesiden, som er i images mappen.
 
 ---------------------------------------------------------------------
 ### OPGAVEBESKRIVELSE FRA TIDLIGERE PROJEKT: 
-# Projektopgave HI-FI Corner
-​
-**Varighed:** 10 dage<br>
-**Start:** Dato kommer <br>
-**Slut:** Dato kommer
 ​
 ## Om opgaven
 Denne opgave er omhandler opsætning, navigation og hentning af data. Læs hele opgavebeskrivelsen grundigt igennem inden du stiller spørgsmål.
@@ -33,11 +28,6 @@ Denne opgave er omhandler opsætning, navigation og hentning af data. Læs hele 
 Du skal fremstille en webapplikation til en HI-FI webbutik, som præsenterer butikkens produkter inddelt efter kategori eller producent. Brugeren af sitet skal nemt og overskueligt kunne finde rundt i de forskellige produkter og kunne fremsøge produkter vha. søgeord. Der er udelukkende tale om præsentation af produkterne, man skal ikke kunne handle produkter på siden.
 ​
 Opgaven varer ca. 2 uger og omhandler udarbejdelse af en projektplan (eksempelvis ved hjælp af GitHub Projects), designanalyse og datastruktur i en eller flere JSON-filer, samt produktionen af client-side produktet.
-​
-Det arbejde der forventes udført når projektet er slut, er en funktionel offentlig tilgængelig client-side som henter data og billeder fra en datakilde. Siden er sat op så den matcher det udleverede design.
-​
-Et HI-FI produkt består af et navn, en beskrivelse, en pris, et billede, samt hører til i en kategori og er knyttet til en producent. Du skal selv udtænke hvordan datastrukturen stilles op i JSON.
-*(billederne findes i den medfølgende .zip fil, men alle andre produktdata finder du selv på noget, benyt evt https://lipsum.com/feed/html )*
 ​
 ### Tekniske krav
 ​
