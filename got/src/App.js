@@ -32,10 +32,12 @@ class App extends Component {
     req.send(null);
   }
   render() {
-    for (let i = 0; i < this.state.length; i++) {
-      return <p>{this.state[i].name}</p>;
+    for (let i = 1; i <= 214; i++) {
+      for (let i = 0; i < this.state.length; i++) {
+        return <p>{this.state}</p>;
+      }
+      return null;
     }
-    return null;
   }
 }
 
