@@ -4,40 +4,36 @@ import ReactDOM from "react-dom";
 class App extends Component {
   constructor() {
     super();
-    this.state = { data: null };
+    this.state = { data: [] };
   }
 
-  componentDidMount() {
-    var req = new XMLHttpRequest();
-    var status = false;
+  async componentDidMount() {
+    let itemsArr = [];
 
-    req.open(
-      "GET",
-      "https://www.anapioficeandfire.com/api/characters?page=" + "&pageSize=10",
-      true
-    );
-
-    req.onload = function () {
-      if (req.readyState === 4 && req.status === 200) {
-        this.setState({ data: req.responseText });
-        status = true;
-        console.log(req.getResponseHeader("link"));
-      } else {
-        console.error(req.statusText);
-      }
-      req.onerror = function () {
-        console.error(req.statusText);
-      };
-    }.bind(this);
-    req.send(null);
-  }
-  render() {
-    for (let i = 1; i <= 214; i++) {
-      for (let i = 0; i < this.state.length; i++) {
-        return <p>{this.state}</p>;
-      }
-      return null;
+    for (let i = 0; i < 5; i++) {
+      const data = await fetch(
+        `https://www.anapioficeandfire.com/api/characters?page=${i}&pageSize=50`
+      ).then((res) => res.json());
+      itemsArr.push.apply(itemsArr, data);
     }
+
+    console.log(itemsArr);
+
+    this.setState({ data: itemsArr });
+  }
+
+  render() {
+    return (
+      <div>
+        <ul>
+          {this.state.data.map((el) => {
+            console.log(el);
+
+            return <li>{el.name}</li>;
+          })}
+        </ul>
+      </div>
+    );
   }
 }
 
