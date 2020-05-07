@@ -10,7 +10,7 @@ class App extends Component {
   async componentDidMount() {
     let itemsArr = [];
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 45; i++) {
       const data = await fetch(
         `https://www.anapioficeandfire.com/api/characters?page=${i}&pageSize=50`
       ).then((res) => res.json());
@@ -27,8 +27,6 @@ class App extends Component {
       <div>
         <ul>
           {this.state.data.map((el) => {
-            console.log(el);
-
             return <li>{el.name}</li>;
           })}
         </ul>
